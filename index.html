@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Ladies Learning Code - JavaScript March 18, 2012</title>
+  <title>Ladies Learning Code - JavaScript Aug. 17, 2013</title>
   <meta name="viewport" content="width=1280">
 
   <!-- CoderDeck core and extension CSS files -->
@@ -53,9 +53,11 @@
         <h1>Introduction to JavaScript</h1>
       </div>
       <p class="download_link">
-        <a href='http://github.com/afabbro/LLC-JavaScript-Vancouver'>http://github.com/afabbro/LLC-JavaScript-Vancouver</a>
+        <a href='https://github.com/snostorm/LLC-JavaScript'>https://github.com/snostorm/LLC-JavaScript</a>
       </p>
-      <p align="center"><a href="http://github.com/afabbro/LLC-JavaScript-Vancouver"><img src="assets/git-download-zip.jpg" width="566" height="400" alt="Github screenshot of ZIP button"></a></p>
+      <p align="center"><a href="https://github.com/snostorm/LLC-JavaScript">
+        <img src="assets/git-download-zip.jpg" width="566" height="400" alt="Github screenshot of ZIP button">
+      </a></p>
       <p style="padding-top: 25px; margin-bottom: 0; font-size: 0.9em; color: #999;">
         ( Interactive code slides thanks to
         <a href="http://cykod.github.com/CoderDeck/" target="_blank" style="color: #999;">CoderDeck</a>
@@ -71,12 +73,11 @@
       </div>
         <h2>Your instructor today</h2>
         <div>
-          <img src="assets/angelina-tiny.jpg" width="72" height="72" alt="Angelinapants" />
-          <h4>Angelina Fabbro</h4>
-          angelinafabbro [at] gmail.com<br />
-          angelina [at] steamclock.com
+          <img src="assets/skepticsean.jpg" width="72" height="72" alt="SkepticSean" />
+          <h4>Sean Ouimet</h4>
+          sean [at] seanouimet.com
           <br />
-          <a href="http://twitter.com/angelinamagnum" target="_blank">@angelinamagnum</a>
+          <a href="http://twitter.com/skepticsean" target="_blank">@skepticsean</a>
         </div>
     </article>
 
@@ -97,7 +98,6 @@
       <ul>
         <li>Debugging in Chrome</li>
         <li>Quick intro to jQuery</li>
-        <li>SPOILER: Javascript on servers and robots?!</li>
         <li>Where can you go from here?</li>
         <!-- <li>Overview of take home assignment: a photo slider.</li> -->
       </ul>
@@ -128,66 +128,101 @@
         (If you are unable to install Chrome:
         <br />
         install
-        <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> <b>and</b>
-        <a href="http://getfirebug.com/" target="_blank">Firebug</a>
+        <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>
         .)
       </p>
     </article>
 
+    <!-- SLIDE: JSBin -->
+    <article class='slide slide-list'>
+      <h2>A Website that lets you write code</h2>
+
+      <p>
+        <a href="http://jsbin.com">JSBin</a> lets you write HTML, CSS and JavaScript
+        directly in your browser.
+      </p>
+
+      <div class="centered contains_sidebyside_icons">
+        <a href="http://jsbin.com" target="_blank"><img src="assets/jsbin.png" alt="JSBin"/></a>
+        <br/>
+        <a href="http://jsbin.com" target="_blank">JSBin.com</a>
+      </div>
+      <br clear="all"/>
+      <br/>
+
+    </article>
+
     <!-- SLIDE: Code Editor -->
     <article class='slide slide-list'>
-      <h2>2. Code Editor</h2>
+      <h2>Code Editor</h2>
+
       <p>
-        There are many, many free and paid options* but let's keep it simple for our mentors today and use just one of these two to edit our code.
+        JSBin (and other similar tools) are a great way to quickly try out and share your HTML, CSS and JavaScript
+        but in reality we want people to visit our actual web pages.
       </p>
+
+      <p>
+        There are many, many free and paid options but let's keep it simple for our mentors today and use the same
+        editor to edit our code. Other options like TextWrangler, Notepad++ and Text Edit are available, too.
+      </p>
+
       <div class="centered contains_sidebyside_icons">
-        <div class="sidebyside_download_icon">
-          <a href="http://notepad-plus-plus.org/" target="_blank"><img src="assets/Notepad.png" width="169" height="125" alt="Notepad++" /></a>
-          <br />
-          <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a>
-          (Windows)
-        </div>
-        <div class="sidebyside_download_icon">
-          <a href="http://www.barebones.com/products/textwrangler/" target="_blank"><img src="assets/textWranglerIcon.png" width="125" height="125" alt="Text Wrangler" /></a>
-          <br />
-          <a href="http://www.barebones.com/products/textwrangler/" target="_blank">TextWrangler</a>
-          (Mac)
-        </div>
+        <img src="./assets/Sublime_Text_Logo.png" width="100px"> <br>
+        <a href="http://www.sublimetext.com/" target="_blank">Sublime Text </a>
       </div>
-      <br clear="all" />
-      <br />
-      <br />
-      <br />
+
+      <br clear="all"/>
+      <br/>
+      <br/>
+      <br/>
+
+    </article>
+
+    <!-- SLIDE: How do I get it online? -->
+    <article class='slide slide-list'>
+      <h2>How do I get it online?</h2>
+
+      <p>
+        Are you using <a href="http://dropbox.com">Dropbox</a>? Sharing your public files is easy:
+      </p>
+
+      <p class="centered">
+        <img src="assets/dropbox_public.png" alt="Dropbox public sharing" />
+      </p>
+
       <p class="sidenote centered">
-         *I like to use <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a>. There are a lot of editors out there, some are used only with terminal output and no GUI!</a>.
-        <br />
-        Ask a group of developers what they use and arguments will ensue -- it's a very personal choice! ;)
+        There are many services now that turn your public Dropbox into a full website<br />
+        instead of having to share the ugly public link), read more <a href="http://www.makeuseof.com/tag/how-to-host-a-dropbox-website/">here</a>.
       </p>
     </article>
 
-    <!-- SLIDE: FTP -->
+    <!-- SLIDE: Webhosting -->
     <article class='slide slide-list'>
-      <h2>3. File Transfer Program (FTP)</h2>
+      <h2>Webhosting</h2>
+
       <p>
-        FTP software will let you copy the files you work on today to another computer that is specially set up to send people your webpage when it is requested. <br />If you're already set up, ask your mentor about what a web server is or help someone else get started.
+        Do you already have your own hosted website? FTP software will let you copy the files you work on today to
+        somewhere where the rest of the world can see them!
       </p>
+
       <div class="centered contains_sidebyside_icons">
-        <a href="http://cyberduck.ch/" target="_blank"><img src="assets/Cyberduck_icon.png" width="125" height="125" alt="CyberDuck" /></a>
-        <br />
+        <a href="http://cyberduck.ch/" target="_blank"><img src="assets/Cyberduck_icon.png" width="125" height="125"
+                                                            alt="CyberDuck"/></a>
+        <br/>
         <a href="http://cyberduck.ch/" target="_blank">CyberDuck</a>
       </div>
-      <br clear="all" />
-      <br />
-      <br />
-      <br />
+      <br clear="all"/>
+      <br/>
+      <br/>
+      <br/>
+
       <p class="sidenote centered">
         Again, there are many, many free and paid options.
-        <br />
+        <br/>
         <a href="http://filezilla-project.org/" target="_blank">FileZilla</a>
         is good when you're more advanced.
       </p>
     </article>
-
     <!-- new slide -->
     <article class='slide slide-subhead'>
       <h1>Technology Overview</h1>
@@ -317,26 +352,27 @@ document.write("Hello, " + name);</pre>
         <strong>manipulate content on web pages</strong>.
       </p>
     </article>
-    
-    
-    
-    
+      
     <!-- SLIDE:  JavaScript in the Browser -->
     <article class='slide slide-list'>
       <h2>JavaScript in the Browser</h2>
+
       <p>
-        C++, Java, and .NET are also programming languages but they can be run directly by the <strong>operating system</strong>
+        C++, Java, and .NET are also programming languages but they can be run directly by the <strong>operating
+        system</strong>
         (e.g. Windows, Mac, Linux).
       </p>
+
       <p>
         JavaScript is typically meant to be run in a
         <strong>web browser</strong>
-        (e.g. Safari, Firefox, Chrome, Internet Explorer).*
+        (e.g. Safari, Firefox, Chrome, Internet Explorer).
       </p>
+
       <p class="centered">
-        <img src="assets/scripting.gif" width="586" height="224" alt="Different programmig languages and the environments they run in" />
+        <img src="assets/scripting.gif" width="586" height="224"
+             alt="Different programmig languages and the environments they run in"/>
       </p>
-      <small>* Angelina will tell you about how Javascript outgrew it's origins towards the end of today's course!</small>
     </article>
 
     <!-- SLIDE:  Web Programming Languages: Server-side vs Client-side-->
@@ -705,9 +741,9 @@ var isSunday = true;
       </p>
       <p>JavaScript ignores whitespace except when used in a string.</p>
 <pre class="prettyprint">
-var name=&quot;Angelina&quot;;
+var name=&quot;Sean&quot;;
 //same as 
-var name = &quot;Angelina&quot;;
+var name = &quot;Sean&quot;;
 </pre>
 <textarea class='coder-editor coder-editor-full'>
 <script>
@@ -1768,6 +1804,7 @@ Now that we know what <span class="keyword">variables</span>, <span class="keywo
     <article class='slide slide-subhead'>
       <h1>Lunch time!</h1>
       <p>Come back for 2:00pm</p>
+      <p>And we will move on to <a href="index2.html">Part 2</a></p>
     </article>
     
   </div>
